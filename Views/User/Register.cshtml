@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <form action="/user/process-registration" method="POST">
+        <div>
+            <label> Your Name: </label>
+            <input type="text" name="Name">
+        </div>
+        <div>
+            <label> Dojo Location: </label>
+            <input list="listOne" name="DojoLocation">
+            <datalist id="listOne">
+                <option value="San Jose">
+                <option value="New York">
+                <option value="New England">
+                <option value="San Juan">
+                <option value="Puerto Rico">
+            </datalist>
+        </div>
+        <div>
+            <label> Favorite Language: </label>
+            <input list="listTwo" name="FavoriteLanguage">
+            <datalist id="listTwo">
+                <option value="C#">
+                <option value="Java">
+                <option value="Html">
+                <option value="Css">
+                <option value="Python">
+            </datalist>
+        </div>
+        <div>
+            <label> Comment: </label>
+            <textarea name="Comment" rows="4" cols="50"></textarea>
+        </div>
+        <button type="submit"> Submit </button>
+    </form>
+</body>
+
+</html>
